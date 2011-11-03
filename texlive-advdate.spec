@@ -1,3 +1,9 @@
+# revision 20538
+# category Package
+# catalog-ctan /macros/latex/contrib/advdate
+# catalog-date 2010-11-22 09:08:01 +0100
+# catalog-license lppl1.3
+# catalog-version undef
 Name:		texlive-advdate
 Version:	20101122
 Release:	1
@@ -42,6 +48,7 @@ been tested with Czech dates.
 %doc %{_texmfdistdir}/doc/latex/advdate/advdate.pdf
 %doc %{_texmfdistdir}/doc/latex/advdate/advdate.tex
 %doc %{_texmfdistdir}/doc/latex/advdate/manifest.txt
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -52,3 +59,5 @@ been tested with Czech dates.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
