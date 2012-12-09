@@ -49,3 +49,18 @@ been tested with Czech dates.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20101122-2
++ Revision: 749091
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20101122-1
++ Revision: 717799
+- texlive-advdate
+- texlive-advdate
+- texlive-advdate
+- texlive-advdate
+- texlive-advdate
+
