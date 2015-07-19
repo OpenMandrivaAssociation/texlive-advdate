@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-advdate
 Version:	20101122
-Release:	9
+Release:	10
 Summary:	Print a date relative to "today"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/advdate
