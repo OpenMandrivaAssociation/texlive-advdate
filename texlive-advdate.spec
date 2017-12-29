@@ -5,8 +5,8 @@
 # catalog-license lppl1.3
 # catalog-version undef
 Name:		texlive-advdate
-Version:	20101122
-Release:	10
+Version:	20170414
+Release:	1
 Summary:	Print a date relative to "today"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/advdate
