@@ -1,18 +1,12 @@
-# revision 20538
-# category Package
-# catalog-ctan /macros/latex/contrib/advdate
-# catalog-date 2010-11-22 09:08:01 +0100
-# catalog-license lppl1.3
-# catalog-version undef
 Name:		texlive-advdate
-Version:	20190228
+Version:	20538
 Release:	1
 Summary:	Print a date relative to "today"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/advdate
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/advdate.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/advdate.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/advdate.r20538.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/advdate.doc.r20538.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ in invoices payable within 14 days from today etc. Has only
 been tested with Czech dates.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -42,25 +36,10 @@ been tested with Czech dates.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20101122-2
-+ Revision: 749091
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20101122-1
-+ Revision: 717799
-- texlive-advdate
-- texlive-advdate
-- texlive-advdate
-- texlive-advdate
-- texlive-advdate
-
